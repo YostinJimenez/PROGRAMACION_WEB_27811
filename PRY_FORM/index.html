@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>INTRODUCCION A LOS FORMULARIOS</title>
+</head>
+
+<body>
+    <header>
+        <h1>FORMULARIO PARA INGRESAR DATOS DE UNA PERSONA</h1>
+    </header>
+    <main>
+        <form action="server.html" target="_blank" method="get">
+            <label for="apellidos">INGRESE SU APELLIDO:</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Ejm. Sisalema" maxlength="5" minlength="3">
+            <label for="nombres">INGRESE SU NOMBRE:</label>
+            <input type="text" name="nombres" id="nombres" placeholder="Ejm. Juan" maxlength="5" minlength="3">
+            <!-- NUMBER -->
+            <label for="edad">INGRESE SU EDAD:</label>
+            <input type="number" name="edad" id="edad" placeholder="Ejm. 30" min="5" max="75">
+            <!-- EMAIL -->
+            <label for="email">INGRESE EL EMAIL:<input type="email" name="email" id="email"
+                    placeholder="Ejm. yasisalema@espe.edu.ec"></label>
+            <!-- DATE -->
+            <!-- El atributo value se el usa para referenciar la decha por defecto en el input -->
+            <label for="fecha">INGRESE SU FECHA DE NACIMIENTO:<input type="date" name="fecha" id="fecha"
+                    placeholder="Ejm. 15/08/1990" value="2024-10-20" max="2024-10-20" min="2022-10-20"></label>
+
+            <!-- RADIO -->
+            <p>SELECCIONE SU SEXO:</p>
+            <label for="masculino">HOMBRE</label>
+            <input type="radio" name="sexo" id="masculino" value="masculino">
+            <label for="femenino">MUJER</label>
+            <input type="radio" name="sexo" id="femenino" value="femenino" checked>
+            <!-- Al usar el atributo checked, se establece como seleccionado por defecto -->
+            <label for="desconocido">DESCONOCIDO</label>
+            <input type="radio" name="sexo" id="desconocido" value="desconocido" disabled>
+
+            <!-- CHECKBOX -->
+            <p>SELECCIONE SUS DIAS DE CLASES DE PROGRAMACION WEB:</p>
+            <label for="lunes">LUNES</label>
+            <input type="checkbox" name="dias[]" id="lunes" value="lunes">
+            <label for="martes">MARTES</label>
+            <input type="checkbox" name="dias[]" id="martes" value="martes">
+            <label for="miercoles">MIERCOLES</label>
+            <input type="checkbox" name="dias[]" id="miercoles" value="miercoles">
+            <label for="jueves">JUEVES</label>
+            <input type="checkbox" name="dias[]" id="jueves" value="jueves">
+            <label for="viernes">VIERNES</label>
+            <input type="checkbox" name="dias[]" id="viernes" value="viernes">
+
+            <!-- INPUT -->
+            <label for="foto">SUBA UNA FOTO:</label>
+            <!-- el artibuto accept sirve para cargar el tipo de archivo deseado -->
+            <input type="file" name="foto" id="foto" accept=".jpg, .png, .jpeg">
+
+            <!-- Color -->
+            <label for="color">SELECCIONE UN COLOR:</label>
+            <input type="color" name="color" id="color" style="background-color: rgb(231,2,32);">
+
+            <!-- RANGUE -->
+            <label for="estatura">SELECCIONE SU ESTATURA:</label>
+            <input type="range" name="estatura" id="estatura" value="12" min="0" max="100" step="1">
+
+            <!-- SEARCH -->
+            <label for="cedula">BUSCAR POR CEDULA:</label>
+            <input type="search" name="cedula" id="cedula" placeholder="Ejm. 1234567890">
+
+            <!-- RESET -->
+            <button type="vaciar">VACIAR FORMULARIO</button>
+            <input type="reset" name="vaciar" id="vaciar">
+
+            <!-- PASSWORD -->
+            <label for="password">INGRESE SU CONTRASEÑA:</label>
+            <input type="password" name="password" id="password" placeholder="Ejm. ********">
+
+            <!-- HIDDEN -->
+            <input type="hidden" name="id" id="id" value="12345">
+
+            <!-- submit -->
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
