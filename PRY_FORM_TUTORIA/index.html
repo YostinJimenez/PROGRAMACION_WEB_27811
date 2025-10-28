@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        FORM TUTORIAL
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1>FORMULARIO DE TUTORIAS</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get" target="_blank">
+            <input type="hidden" name="numero_tarjeta" value="4251451255">
+            <!-- <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo" required
+                pattern="[A-Za-z ]+">
+            <label for="edad">Ingrese su edad desde el 18 a 69 anos </label>
+            <input type="number" name="edad" required min="18" max="60"> -->
+            <!-- <input type="text" name="edad" required pattern="([1-9][0-9])"> -->
+            <label for="pin">Contrasena: (ABcd1597Hg9)</label>
+            <input id="pin" name="pin" type="password" pattern="([A-Z]{2}[a-z]{2}[0-9]{4}[A-Z]{1}[a-z]{1}[0-9]{1})" required />
+            <button type="submit">
+                ENVIAR FORMULARIO
+            </button>
+        </form>
+    </main>
+    <footer>
+        <p>c 2025</p>
+    </footer>
+</body>
+
+</html>

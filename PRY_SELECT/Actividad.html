@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD EN CLASE</title>
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1>FORMULARIO REGISTRO</h1>
+        </center>
+    </header>
+    <main>
+        <form action="server.html" method="get" target="_blank">
+            <fieldset>
+                <legend>REGISTRO DE ESTUDIANTE</legend>
+                <center>
+                    <label>Nombres y Apellidos:
+                        <input type="text" name="nombre_apellido" width="100%" placeholder="Alexander Tixi">
+                    </label>
+                    <br><br>
+                    <label>Cedula:
+                        <input type="number"  width="100vw"  name="cedula" maxlength="10" min="0000000000" max="0000000000"
+                            pattern="[0-9]{10}" placeholder="Ingrese 10 dígitos, debe empezar con 0" required
+                            title="Debe contener 10 dígitos y comenzar con 0">
+
+                        <!-- <br>
+                    <label for="cedula">Cédula:</label>
+                    <input type="text" id="cedula" name="cedula" maxlength="10" pattern="0[0-9]{9}" placeholder=""
+                        required title="Debe contener 10 dígitos y comenzar con 0"> -->
+
+
+                    </label>
+                    <br><br>
+                    <label>Fecha de Nacimiento:
+                        <input type="date" name="fecha_nacimiento" value="2008-06-30" min="2005-10-27" max="2010-10-27"
+                            required>
+                    </label>
+                    <br><br>
+                    <!-- pattern [A-Z]{3}-->
+                    <label>Seleccionar Materias:
+                        <select name="seleccion_materias" id="seleccion_materias" required maxlength="3">
+                            <option value="seleccion_materias" disabled selected> Seleccione una materia</option>
+                            <option value="Programacion_Web">Programacion Web</option>
+                            <option value="Estructura_Datos">Estructura de Datos</option>
+                            <option value="Bases_Datos">Bases de Datos</option>
+                            <option value="Ingenieria_Usabilidad">Ingeniería de Usabilidad</option>
+                            <option value="Computacion_Paralela">Computacion_Paralela</option>
+                        </select>
+                    </label>
+                </center>
+            </fieldset>
+            <fieldset>
+                <legend>SLECCIONE LA HOJA DE VIDA</legend>
+                <center>
+                    <label> Seleccionar Archivo:
+                        <input type="file" name="hoja_vida" width="100%" required accept=".pdf,.doc,.docx">
+                    </label>
+                </center>
+            </fieldset>
+            <fieldset>
+                <legend>GENERAR EL IDBANNER</legend>
+                <center>
+                    <label> IDBANNER:
+                        <input type="text" name="IDBANNER" max="[A-Z]{3}[0-9]{5}" min="[A-Z]{3}[0-9]{5}"
+                            pattern="[A-Z]{3}[0-9]{5}" placeholder="ESPE####"
+                            title="El IDBANNER debe comenzar con tres letras seguidas de 4 dígitos">
+                    </label>
+                </center>
+            </fieldset>
+            <br><br>
+            <center>
+                <button type="submit">Registrar</button>
+            </center>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

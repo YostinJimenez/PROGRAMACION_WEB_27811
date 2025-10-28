@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background: radial-gradient(circle,transparent, #0073, #fff);">
+    <header>
+        <h1>SELECT EN FORMULARIO</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get" target="_blank">
+            <fieldset>
+                <legend>SELECCIONE OPCIONES</legend>
+                <!-- select para form -->
+                <label for="lenguaje_programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO:</label>
+            <select name="lenguaje_programacion" id="lenguaje_programacion">
+                <option value="C_mas_mas" selected>C++</option>
+                <option value="java">JAVA</option>
+                <option value="python">PYTHON</option>
+                <option value="HTML" disabled>HTML</option>
+                <option value="javascript">JAVASCRIPT</option>
+                <option value="csharp">C#</option>
+            </select>
+        </fieldset>
+            <label for="musica_favorita">SELECCIONE SU MUSICA FAVORITA:</label>
+            <!-- el atributo max es el maximo de opciones que se pueden seleccionar pero no es muy recomendable debria usarse el size-->
+            <select name="musica_favorita[]" id="musica_favorita" multiple required maxlength="2" size="10" autofocus>
+                <optgroup title="REGUETON" label="REGUETON">
+                    <option value="LOOBS">SHAKIRA LOBA</option>
+                    <option value="ANOCHE">BAD BUNNY</option>
+                    <option value="ALL_OF_ME">JHON LEJON ALLL OF ME</option>
+                    <option value="clasica">JOSE JOSE TRISTE</option>
+                </optgroup>
+                <optgroup title="CHICHA" label="CHICHA">
+                    <option value="CHICHAMIX">CHICHAMIX</option>
+                    <option value="CHICHA_POP">CHICHA POP</option>
+                    <option value="CHICHA_REGUETON">CHICHA REGUETON</option>
+                    <option value="CHICHA_CLASICA">CHICHA CLASICA</option>
+                </optgroup>
+                <!-- <option value="LOOBS">SHAKIRA LOBA</option>
+             <option value="ANOCHE">BAD BUNNY</option>
+             <option value="ALL_OF_ME">JHON LEJON ALLL OF ME</option>
+             <option value="clasica">JOSE JOSE TRISTE</option> -->
+            </select>
+
+
+
+
+
+            <!-- ckeditor text area (para dar estilo en el textarea)-->
+            <!-- tambien el lo input existe estilo se lo podria buscar en select2 -->
+            <!-- textarea para form -->
+            <label for="frase_motivadora">INGRESE SU FRASE MOTIVADORA:</label>
+            <textarea name="frase_motivadora" id="frase_motivadora" rows="5" cols="10" placeholder="escribe algo rey"
+                required disabled> BUENOS DÍAS </textarea>
+
+
+            <!-- hidden -->
+            <input type="hidden" name="celula_usuario" value="050419A012">
+            <!-- tiene que ser type submit para poder enviar el formulario ,no usar "button" como type en la etiqueta de button-->
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
