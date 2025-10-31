@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS EN PAGINA</title>
+    <style>
+        /* afecta a todos elementos de nuestra pagina */
+        * {
+            font-size: small;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        /* por etiqueta */
+        h1 {
+            color: brown;
+            font-size: 2em;
+        }
+        p {
+            color: #11b7e0;
+            font-size: medium;
+        }
+
+        button:nth-of-type(2) {
+            background-color: orange;
+            color: white;
+            font-size: large;
+        }
+        .botones-personalizados {
+            background-color: green;
+            color: white;
+            font-size: large;
+        }
+        .boton-unico {
+            background-color: blueviolet;
+            color: white;
+            font-size: large;
+        }
+        /* mozilla css documentation */
+    </style>
+    <link rel="stylesheet" href="./public/css/boton_enviar.css">
+</head>
+<body>
+    <h1>HOLA MUNDO</h1>
+    <h2>SALUDO DOS</h2>
+    <p>COMO ESTAN
+    </p>   
+    <hr>
+    <button class="botones-personalizados">BOTON1</button>
+    <button class="botones-personalizados">BOTON2</button>
+    <button class="botones-personalizados boton-unico">BOTON3</button>
+</body>
+</html>

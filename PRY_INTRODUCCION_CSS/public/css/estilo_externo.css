@@ -1,0 +1,17 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.a{
+   width: 100%;
+    height: 100px;
+    /*Para darle fondo y que se vea medio opaco los los box y se vea pongase nose las palabras que este atras del box usamos los colores hexadecimales como el RGBA ponemos un numero entre 0 y 1 para la opacidad*/
+    background-color: #f003;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd8Qqt8hiw1D8iE0u6roFsDdvH5LjXn3p_bQ&s");
+    /*En este caso el background-size se usa para ajustar la imagen de fondo al tamaño del contenedor,exiten 3 propiedades contain(hace que la imagen se ajuste al contenedor,ppero podemos usar background-repeat para que no se repita la imagen(podemos usar no-repeat,repeat-x para el eje de las x o repeat-y para el eje de las y), cover(este hace que la imagen cubra todo el contenedor,osea la imagen va salir medio feo pero con background-position se puede ajustar(puese ser center,left,right,top,bottom,tambien usar medidas como el px) y auto(esto hace que la imagen mantenga su tamaño original)*/
+    background-size: cover;
+    background-position: center;/*o tambien pixeles se el puede poner*/
+
+    /*Esta funcion de background-attachment hace que la imagen de fondo se mantenga fija en su lugar mientras se desplaza el contenido de la página(es decir que si ponemos fixed es como que la imagen se queda quieta y el contenido se desplaza sobre ella,tambien podemos usar "scroll" para que la imagen se desplace con el contenido igual es lo de "local")*/
+
+}

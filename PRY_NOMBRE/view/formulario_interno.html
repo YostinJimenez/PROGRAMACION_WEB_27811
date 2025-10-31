@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNO</title>
+    <style>
+        body {
+            font-family:  Courier, monospace;
+            background-color: #999;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-size: 23px;
+        }
+
+        .inputs {
+            width: 70vw;
+            margin: auto;
+            font-size: 20px;
+            padding: 30px 30px;
+            background: #555;
+            border-radius: 10px;
+        }
+
+        label {
+            position: relative;
+        }
+
+        .input-nombre,
+        .input-email,
+        .input-contraseña {
+            width: 100%;
+            margin-bottom: 32px;
+            padding: 10px 0px 10px 0px;
+            border: none;
+            background-color: inherit;
+            border-radius: 12px;
+            border-bottom: 2px solid #fff;
+            font-size: 16px;
+        }
+
+        .input-textarea {
+            width: 95%;
+            height: 150px;
+            padding: 10px 10px;
+            border: none;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+
+        .input-select {
+            width: 95%;
+            padding: 10px 10px;
+            border: none;
+            background-color: #fff9;
+            border-bottom: 2px solid #000;
+            border-bottom: 2px solid #000;
+            border-radius: 5px;
+            margin: 20px 0px 23px 0px;
+            font-size: 16px;
+        }
+
+        .input-checkbox {
+            position: relative;
+            bottom: 22px;
+            left: 12px;
+            width: 100%;
+            margin-right: 0px;
+            cursor: pointer;
+        }
+
+        .input-radio {
+            position: relative;
+            top: 25px;
+            left: 7px;
+            cursor: default;
+            margin: 0 5px;
+        }
+
+        .input-button {
+            margin-top: 22px;
+            background-color: #0007;
+            color: white;
+            padding: 20px 15px;
+            border: none;
+        }
+
+        header {
+            background: #999;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #999;
+            padding: 20px 0px 30px 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FORMULARIO INTERNO</h1>
+    </header>
+    <main>
+        <form action="formulario_interno.html" method="get" id="formulario_interno" target="_blank" class="inputs">
+            <label>Nombres y Apellidos
+                <input class="input-nombre" type="text" name="nombre_apellido" placeholder="...">
+            </label>
+            <label>Email
+                <input class="input-email" type="email" name="email" placeholder="...">
+            </label>
+            <label>Cédula
+                <input class="input-contraseña" type="text" name="cedula" placeholder="0#########">
+            </label>
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario" class="inputs input-textarea"></textarea>
+            <label for="opciones">Opciones:</label>
+            <select name="opciones" id="opciones" class="inputs input-select">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+            </select>
+
+            <label for="checkbox">Eliga suscripción</label>
+            <input type="checkbox" name="suscripcion" id="suscripcion" class="inputs input-checkbox">
+
+            <label for="radio">Elija género:</label>
+            <input type="radio" name="genero" value="masculino" class="inputs input-radio"> Masculino
+            <input type="radio" name="genero" value="femenino" class="inputs input-radio"> Femenino
+            <input type="radio" name="genero" value="otro" class="inputs input-radio"> Otro
+            <div class="formato-boton">
+                <button type="submit" class="inputs input-button">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+</body>
+
+</html>
